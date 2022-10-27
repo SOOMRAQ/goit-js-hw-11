@@ -70,6 +70,7 @@ async function fetchData() {
       'beforeend',
       result.data.hits.map(createMarkup).join('')
     );
+    lightbox.refresh();
     page++;
 
     if (result.data.totalHits <= gallery.children.length) {

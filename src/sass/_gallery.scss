@@ -30,9 +30,12 @@
 }
 
 .photo-preview {
-  width: 200px;
   // justify-self: center;
-  display: block;
+  // display: block;
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  object-fit: cover;
 }
 
 .info {
