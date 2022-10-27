@@ -72,9 +72,8 @@ async function fetchData() {
     );
     page++;
 
-    if (result.data.totalHits === gallery.children.length) {
+    if (result.data.totalHits <= gallery.children.length) {
       loadMore.style.display = 'none';
-      //   lightbox.refresh();
       Notify.info(`We're sorry, but you've reached the end of search results.`);
     }
   } catch (error) {

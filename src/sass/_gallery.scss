@@ -30,8 +30,9 @@
 }
 
 .photo-preview {
-  max-width: 200px;
-  justify-self: center;
+  width: 200px;
+  // justify-self: center;
+  display: block;
 }
 
 .info {
